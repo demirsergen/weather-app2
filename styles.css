@@ -1,0 +1,150 @@
+:root {
+    --secondary-text-color: #212121;
+    --primary-text-color: #757575;
+    --text-color: #e6e6e6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width:100vw;
+    height:100vh;
+    background-color: #f5f5f5;
+    background: url(./images/cloudy.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.left {
+    width: 65%;
+    height: 100%;
+    padding: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+}
+
+.left .left-bottom {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.temperature-container h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.city-time-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.city-container {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.right{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding:3em 3em;
+    background: rgba(5, 15, 38, 0.5);
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--primary-text-color);
+;
+    padding: .5em 0;
+    margin-bottom: 1em;
+}
+
+.input-container input {
+    width: 50%;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: transparent;
+    outline: none;
+    color: var(--primary-text-color);
+
+}
+
+.input-container input::placeholder {
+    color: var(--primary-text-color);
+
+}
+
+.input-container button {
+    padding: 10px 15px;
+}
+
+.input-container button:hover {
+    cursor: pointer;
+}
+
+.cities-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    gap: 2em;
+    border-bottom: 1px solid var(--primary-text-color);
+    padding: 1em 0;
+    margin-bottom: 1em;
+}
+
+.city {
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.city:hover {
+    cursor: pointer;
+}
+
+.weather-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--primary-text-color);
+    padding: 1em 0;
+    color: white;
+}
+
+.weather-details-container h3 {
+    color: white;
+    margin-bottom: 2em;
+}
+
+.weather-details-types {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.weather-type {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

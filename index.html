@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>the.weather</title>
+    <link rel="stylesheet" href="./styles.css" />
+    
+  </head>
+  <body>
+    <div class="left">
+      <div class="left-top">
+        <h3>the.weather</h2>
+      </div>
+      <div class="left-bottom">
+        <div class="temperature-container">
+          <h1 class="displayed-temperature">16°</h1>
+        </div>
+        <div class="city-time-container">
+          <div class="city-container">
+            <h1 class="displayed-city">London</h1>
+          </div>
+          <div class="time-date-container">
+            <span class="displayed-time">11:24</span>
+            <span class="displayed-date">Thursday, 7 April 2022</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="input-container">
+        <input
+          type="text"
+          name="city"
+          id="enteredCity"
+          placeholder="Another Location"
+          value=""
+        />
+        <button type="button" id="search-button">Search</button>
+      </div>
+      <div class="cities-container">
+        <button class="city" id="city-chicago">Chicago</button>
+        <button class="city" id="city-istanbul">Istanbul</button>
+        <button class="city" id="city-newyork">New York</button>
+        <button class="city" id="city-california">California</button>
+      </div>
+      <div class="weather-details-container">
+          <h3>Weather Details</h3>
+          <div class="weather-details-types">
+            <div class="weather-type cloudy">
+                <span>Cloudy</span>
+                <span>86%</span>
+            </div>
+            <div class=" weather-type humidity">
+                <span>Humidity</span>
+                <span>62%</span>
+            </div>
+            <div class="weather-type wind">
+                <span>Wind</span>
+                <span>8km/h</span>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
